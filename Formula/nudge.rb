@@ -5,21 +5,21 @@
 class Nudge < Formula
   desc "Accountability CLI with real consequences — set deadlines, add secrets, face punishments"
   homepage "https://github.com/neilsanghrajka/nudge"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/neilsanghrajka/nudge/releases/download/v0.2.0/nudge_darwin_amd64.tar.gz"
-      sha256 "6074b7ffc4f6e5a898c72714f2c6a7a89e693ae5d09c06cbdc2974eaf860dc36"
+      url "https://github.com/neilsanghrajka/nudge/releases/download/v0.3.0/nudge_darwin_amd64.tar.gz"
+      sha256 "453d6f262380057aaa4890dfaa7ebe4392da35c14d43fd97fcb98bc81291f3ac"
 
       define_method(:install) do
         bin.install "nudge"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/neilsanghrajka/nudge/releases/download/v0.2.0/nudge_darwin_arm64.tar.gz"
-      sha256 "07d601ef37d4f56ca73a9a9139f953720b914ae2f73978352214eb1e6cd2102b"
+      url "https://github.com/neilsanghrajka/nudge/releases/download/v0.3.0/nudge_darwin_arm64.tar.gz"
+      sha256 "04ece09de61399e728252e38c70a27d9fae95677e4d4afcdcac38e5120d5193e"
 
       define_method(:install) do
         bin.install "nudge"
@@ -29,15 +29,15 @@ class Nudge < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/neilsanghrajka/nudge/releases/download/v0.2.0/nudge_linux_amd64.tar.gz"
-      sha256 "40279459af60c298cb5fa84daed487b8b083dad1760cf71f9174e41f4709195d"
+      url "https://github.com/neilsanghrajka/nudge/releases/download/v0.3.0/nudge_linux_amd64.tar.gz"
+      sha256 "7fedbd773ffe60446f6f1dac8f7cc37d63a13ce9732e6e0f30b6390cd4df9c39"
       define_method(:install) do
         bin.install "nudge"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/neilsanghrajka/nudge/releases/download/v0.2.0/nudge_linux_arm64.tar.gz"
-      sha256 "4c7e7d2a443d4dc15925d20d5b804ef675860bc9261edaa2a65cc155ef75f589"
+      url "https://github.com/neilsanghrajka/nudge/releases/download/v0.3.0/nudge_linux_arm64.tar.gz"
+      sha256 "83198b9270fa1babb356379fb9da14eb38b0178b60625b5ac2f210da27eb4366"
       define_method(:install) do
         bin.install "nudge"
       end
